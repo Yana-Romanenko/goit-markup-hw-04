@@ -92,6 +92,15 @@ img {
   letter-spacing: 0.02em;
 }
 
+.nav-item:hover::after {
+  content: "";
+  width: 66px;
+  height: 4px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background-color: #404bbf;
+}
+
 .adress {
   font-style: normal;
 }
@@ -112,10 +121,6 @@ img {
   font-weight: 400;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
-}
-
-.background {
-  background: #2e2f42;
 }
 
 .main-title {
@@ -212,6 +217,17 @@ img {
   width: calc((100% - 72px) / 4);
 }
 
+.first-section-icon-container {
+  width: 264px;
+  height: 112px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  background: #f4f4fd;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
 .second-section-list-item {
   border-radius: 0px 0px 4px 4px;
 }
@@ -247,6 +263,7 @@ img {
 .header-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .section {
@@ -276,10 +293,14 @@ img {
 
 .hero-section {
   padding: 188px 0;
-}
-
-.first-section-container {
-  margin: 120px auto;
+  background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .second-section-list {
@@ -290,10 +311,6 @@ img {
 .second-section-card {
   text-align: center;
   padding: 32px 0;
-}
-
-.third-section-title {
-  margin-top: 120px;
 }
 
 .third-section-list {
@@ -315,4 +332,8 @@ img {
 
 .footer-background {
   background: #2e2f42;
+}
+
+.social-link {
+  display: flex;
 }
