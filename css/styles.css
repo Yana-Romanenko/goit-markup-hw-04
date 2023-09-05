@@ -246,14 +246,6 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.social-links-list {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  width: 40px;
-  height: 40px;
-}
-
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -358,4 +350,35 @@ img {
 
 .footer-background {
   background: #2e2f42;
+}
+
+.social-links-item {
+  height: 40px;
+  width: 40px;
+}
+
+.social-links-link {
+  height: 100%;
+  width: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-links-link:hover,
+.social-links-link:focus {
+  background-color: #404bbf;
+}
+
+.social-link {
+  fill: #f4f4fd;
+}
+
+.social-links-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
