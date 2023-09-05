@@ -398,6 +398,11 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.third-section-image-container:hover .inner-picture-paragraph,
+.third-section-image-container:focus .inner-picture-paragraph {
+  transform: translateY(0%);
+}
+
 .third-section-image-container {
   position: relative;
   overflow: hidden;
@@ -448,6 +453,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-links-link:hover,
